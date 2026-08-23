@@ -1,6 +1,9 @@
-/*//Functions - wrap a block of code to execute
+//Importing the 'Person' class to be used here
+const Person = require('./JS-Classes')
+//Functions - wrap a block of code to execute
 //var - global level/functional
 //let - global level/block level {}
+
 const greet = "Evening"
 
 if (1==1)
@@ -30,7 +33,7 @@ let sumOfIntegers = function(c,d)
 //better one line usage
 let sumOfNumbers= (c,d)=> c+d
 console.log(sumOfNumbers(2,3))
-*/
+
 
 //Strings and methods
 let day = 'Tuesday '
@@ -67,3 +70,6 @@ while (val2!==-1) {
     val2 =newQuote.indexOf("day",val2+1)
 }
 console.log(count)
+
+let person =new Person("Chris","Edward")
+console.log(person.fullName())

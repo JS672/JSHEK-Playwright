@@ -1,5 +1,5 @@
 //Classes 
-class Person 
+module.exports = class Person 
 {
     age = 25
     // location = "Canada"
@@ -13,12 +13,20 @@ class Person
         this.firstName = firstName
         this.lastName = lastName
     }
-
+    //Methods
+    fullName()
+    {
+        console.log(this.firstName+this.lastName)
+    }
 
 
 
 }
 
-let person =new Person("Tim","Joseph")
+/* let person =new Person("Tim","Joseph")
+let person1 =new Person("Chris","Jones")
 console.log(person.age)
 console.log(person.location)
+console.log(person.fullname())
+console.log(person1.fullname())
+console.log(person) */
